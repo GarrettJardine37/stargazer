@@ -8,7 +8,7 @@ interface locationState {
 }
 
 function LandingPage() {
-  const [currentLocation, setCurrentLocation]  = useState<locationState>({ lat: 40.006857, lng: -102.043166 }); // Default to a location middle of the US
+  const [currentLocation, setCurrentLocation]  = useState<locationState>({ lat: 0, lng: 0 }); // Default to a location middle of the US
 
   function success(position : GeolocationPosition) {
     setCurrentLocation({ lat: position.coords.latitude, lng: position.coords.longitude });
@@ -23,10 +23,8 @@ function LandingPage() {
   }, []);
 
   return (
-    <div className="grid">
-      <h1>Welcome to the Landing Page</h1>
-      <p>Your current location is: {currentLocation.lat}, {currentLocation.lng}</p>
-      <WorldMap currentLocation={currentLocation}/>
+    <div className="grid h-screen w-screen">
+        <WorldMap currentLocation={currentLocation} />
     </div>
   );
 }
