@@ -1,6 +1,6 @@
 import { MapContainer, TileLayer, Marker, Popup, ImageOverlay } from 'react-leaflet'
 
-import nightMap from '../assets/BlackMarble.png';
+import nightMap from '../assets/BlackMarble_Mercator.png';
 
 function WorldMap(props: any) {
 
@@ -12,7 +12,7 @@ function WorldMap(props: any) {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <ImageOverlay
-        bounds={[[90, -90], [-180, 180]]}
+        bounds={[[-90, -180], [90, 180]]}
         url={nightMap}
         opacity={0.5}
       />
