@@ -1,6 +1,6 @@
 import { MapContainer, TileLayer, Marker, Popup, ImageOverlay } from 'react-leaflet'
 
-import nightMap from '../assets/BlackMarble_Mercator.png';
+import nightMap from '../assets/BlackMarble_Mercator_Magma.webp';
 
 function WorldMap(props: any) {
 
