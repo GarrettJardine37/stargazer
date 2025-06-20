@@ -11,24 +11,16 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-/* .landing-page {
-  text-align: center;
-}
-
-.map-container {
-  height: 100vh;
-  width: 100vw;
-} */
-
 .leaflet-layer,
 .leaflet-control-zoom-in,
 .leaflet-control-zoom-out,
 .leaflet-control-attribution {
-  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+  filter: invert(100%) hue-rotate(180deg);
 }
 
 .leaflet-container {
-    background: #000
+  z-index: 0 !important;
+  background: #000
 }
 
 @keyframes logo-spin {
