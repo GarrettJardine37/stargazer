@@ -6,7 +6,7 @@ import './App.css'
 const App = () =>{
   return (
     <Routes>
-      <Route path="/" element={<LandingPage />} />
+      <Route path="/stargazer" element={<LandingPage />} />
     </Routes>
   )
 }
